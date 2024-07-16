@@ -32,12 +32,43 @@ input[type="text"] {
     margin-left: 10px;
 }
 
+.weather-container {
+    display: flex;
+    justify-content: center;
+}
+
 #weather-data {
-    margin-top: 60px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+}
+
+.temperature {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.details {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.details span {
+    display: block;
+    margin: 5px 0;
 }
 
 @media (max-width: 768px) {

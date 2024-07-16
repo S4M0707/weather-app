@@ -14,10 +14,23 @@
         <input type="text" id="city" name="city" placeholder="Enter city name">
         <button type="submit" id="search-btn">Search</button>
     </form>
-    <div id="weather-data">
-        <p id="weather-description"> {{ decription }} </p>
-        <p id="temperature">{{ temp }}&deg;C</p>
-    </div>
+    <section class="weather-container">
+        <div id="weather-data">
+            <img src={{ icon }} alt="Weather Icon" class="weather-icon">
+            <div class="temperature">{{ temp }}&deg;C</div>
+            <div class="description">{{ decription }}</div>
+            <div class="details">
+                <span>Feels Like: {{ feel }}°C</span>
+                <span>Min Temp: {{ mintemp }}°C</span>
+                <span>Max Temp: {{ maxtemp }}°C</span>
+                <span>Pressure: {{ press }} hPa</span>
+                <span>Humidity: {{ humid }}%</span>
+                <span>Visibility: {{ visi }} meters</span>
+                <span>Wind Speed: {{ wspeed }} m/s</span>
+                <span>Wind Direction: {{ wdir }}°</span>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
