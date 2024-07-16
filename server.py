@@ -1,5 +1,5 @@
 import flask
-import waitress
+from waitress import serve
 from weather import get_weather
 
 app = flask.Flask(__name__)
@@ -37,5 +37,4 @@ def get_weather_route():
     )
 
 if __name__ == '__main__':
-    # waitress.serve(app, host = '0.0.0.0', port = 8000)
-    app.run(host = '0.0.0.0', port = 8000)
+    serve(app, host = '0.0.0.0', port = 8000)
